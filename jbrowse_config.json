@@ -1,0 +1,708 @@
+{
+  "plugins": [
+    {
+      "name": "Broadcastchannel",
+      "umdUrl": "/jbrowse-bc0/dist/jbrowse-plugin-broadcastchannel.umd.development.js"
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "Arachis hypogaea Fuhuasheng.gnm1.XX5Y Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis hypogaea Fuhuasheng.gnm1.XX5Y Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y/arahy.Fuhuasheng.gnm1.XX5Y.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y/arahy.Fuhuasheng.gnm1.XX5Y.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y/arahy.Fuhuasheng.gnm1.XX5Y.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "arahy.Fuhuasheng.gnm1"
+      ]
+    },
+    {
+      "name": "Arachis hypogaea Shitouqi.gnm1.L4VP Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis hypogaea Shitouqi.gnm1.L4VP Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP/arahy.Shitouqi.gnm1.L4VP.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP/arahy.Shitouqi.gnm1.L4VP.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP/arahy.Shitouqi.gnm1.L4VP.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "arahy.Shitouqi.gnm1"
+      ]
+    },
+    {
+      "name": "Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3/arahy.Tifrunner.gnm1.KYV3.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3/arahy.Tifrunner.gnm1.KYV3.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3/arahy.Tifrunner.gnm1.KYV3.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "arahy.Tifrunner.gnm1"
+      ]
+    },
+    {
+      "displayName": "Arachis hypogaea Tifrunner.gnm2.J5K5 Genomes",
+      "name": "arahy.Tifrunner.gnm2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis hypogaea Tifrunner.gnm2.J5K5 Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/arahy.Tifrunner.gnm2.J5K5.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "arahy.Tifrunner.gnm2"
+      ]
+    },
+    {
+      "name": "Arachis duranensis V14167.gnm1.SWBf Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis duranensis V14167.gnm1.SWBf Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm1.SWBf/aradu.V14167.gnm1.SWBf.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm1.SWBf/aradu.V14167.gnm1.SWBf.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm1.SWBf/aradu.V14167.gnm1.SWBf.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "aradu.V14167.gnm1"
+      ]
+    },
+    {
+      "name": "Arachis duranensis V14167.gnm2.J7QH Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis duranensis V14167.gnm2.J7QH Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "aradu.V14167.gnm2"
+      ]
+    },
+    {
+      "name": "Arachis ipaensis K30076.gnm1.bXJ8 Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis ipaensis K30076.gnm1.bXJ8 Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm1.bXJ8/araip.K30076.gnm1.bXJ8.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm1.bXJ8/araip.K30076.gnm1.bXJ8.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm1.bXJ8/araip.K30076.gnm1.bXJ8.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "araip.K30076.gnm1"
+      ]
+    },
+    {
+      "name": "Arachis ipaensis K30076.gnm2.1GWY Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis ipaensis K30076.gnm2.1GWY Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm2.1GWY/araip.K30076.gnm2.1GWY.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm2.1GWY/araip.K30076.gnm2.1GWY.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm2.1GWY/araip.K30076.gnm2.1GWY.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "araip.K30076.gnm2"
+      ]
+    },
+    {
+      "name": "Arachis cardenasii K10017.gnm1.DQ4M Genomes",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Arachis cardenasii K10017.gnm1.DQ4M Genomes-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/cardenasii/genomes/K10017.gnm1.DQ4M/araca.K10017.gnm1.DQ4M.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/cardenasii/genomes/K10017.gnm1.DQ4M/araca.K10017.gnm1.DQ4M.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/cardenasii/genomes/K10017.gnm1.DQ4M/araca.K10017.gnm1.DQ4M.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "aliases": [
+        "araca.K10017.gnm1"
+      ]
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "arahy.Tifrunner.gnm1.ann1.CCJH.gene_models_main.gff3",
+      "name": "Arachis hypogaea Tifrunner.gnm1.ann1.CCJH Annotations",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm1.ann1.CCJH/arahy.Tifrunner.gnm1.ann1.CCJH.gene_models_main.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm1.ann1.CCJH/arahy.Tifrunner.gnm1.ann1.CCJH.gene_models_main.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "demo_li_b_disp",
+          "mouseover": "jexl:mouseover(feature)"
+        }
+      ],
+      "assemblyNames": [
+        "Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "arahy.Tifrunner.gnm2.ann1.4K0L.gene_models_main.gff3",
+      "name": "Arachis hypogaea Tifrunner.gnm2.ann1.4K0L Annotations",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm2.ann1.4K0L/arahy.Tifrunner.gnm2.ann1.4K0L.gene_models_main.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm2.ann1.4K0L/arahy.Tifrunner.gnm2.ann1.4K0L.gene_models_main.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "arahy.Tifrunner.gnm2"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "arahy.Tifrunner.gnm2.ann2.PVFB.gene_models_main.gff3",
+      "name": "Arachis hypogaea Tifrunner.gnm2.ann2.PVFB Annotations",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm2.ann2.PVFB/arahy.Tifrunner.gnm2.ann2.PVFB.gene_models_main.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm2.ann2.PVFB/arahy.Tifrunner.gnm2.ann2.PVFB.gene_models_main.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "arahy.Tifrunner.gnm2"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "aradu.V14167.gnm1.ann1.cxSM.gene_models_main.gff3",
+      "name": "Arachis duranensis V14167.gnm1.ann1.cxSM Annotations",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/duranensis/annotations/V14167.gnm1.ann1.cxSM/aradu.V14167.gnm1.ann1.cxSM.gene_models_main.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/annotations/V14167.gnm1.ann1.cxSM/aradu.V14167.gnm1.ann1.cxSM.gene_models_main.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "aradu.V14167.gnm1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "araip.K30076.gnm1.ann1.J37m.gene_models_main.gff3",
+      "name": "Arachis ipaensis K30076.gnm1.ann1.J37m Annotations",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/ipaensis/annotations/K30076.gnm1.ann1.J37m/araip.K30076.gnm1.ann1.J37m.gene_models_main.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/ipaensis/annotations/K30076.gnm1.ann1.J37m/araip.K30076.gnm1.ann1.J37m.gene_models_main.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "araip.K30076.gnm1"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "arahy.Tifrunner.gnm2.x.aradu.V14167.gnm2",
+      "name": "arahy.Tifrunner.gnm2.x.aradu.V14167.gnm2",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genome_alignments/Tifrunner.gnm2.0KEE/arahy.Tifrunner.gnm2.J5K5.x.aradu.V14167.gnm2.J7QH.minimap2.paf.gz",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "Arachis hypogaea Tifrunner.gnm2.J5K5 Genomes",
+          "Arachis duranensis V14167.gnm2.J7QH Genomes"
+        ]
+      },
+      "assemblyNames": [
+        "Arachis hypogaea Tifrunner.gnm2.J5K5 Genomes",
+        "Arachis duranensis V14167.gnm2.J7QH Genomes"
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "arahy.Tifrunner.gnm2.J5K5.x.aradu.V14167.gnm2.J7QH.minimap2",
+      "name": "arahy.Tifrunner.gnm2.J5K5.x.aradu.V14167.gnm2.J7QH.minimap2",
+      "adapter": {
+        "type": "BamAdapter",
+        "bamLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genome_alignments/Tifrunner.gnm2.0KEE/arahy.Tifrunner.gnm2.J5K5.x.aradu.V14167.gnm2.J7QH.minimap2.bam",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/genome_alignments/Tifrunner.gnm2.0KEE/arahy.Tifrunner.gnm2.J5K5.x.aradu.V14167.gnm2.J7QH.minimap2.bam.bai",
+            "locationType": "UriLocation"
+          },
+          "indexType": "BAI"
+        },
+        "sequenceAdapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "assemblyNames": [
+        "Arachis duranensis V14167.gnm2.J7QH Genomes"
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT",
+      "name": "aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT",
+      "adapter": {
+        "type": "BamAdapter",
+        "bamLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/duranensis/genome_alignments/V14167.gnm2.wga.96TT/aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT.bam",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genome_alignments/V14167.gnm2.wga.96TT/aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT.bam.bai",
+            "locationType": "UriLocation"
+          },
+          "indexType": "BAI"
+        },
+        "sequenceAdapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/aradu.V14167.gnm2.J7QH.genome_main.fna.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "assemblyNames": [
+        "Arachis duranensis V14167.gnm2.J7QH Genomes"
+      ]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "aradu.V14167.gnm2.x.araca.K10017.gnm1",
+      "name": "aradu.V14167.gnm2.x.araca.K10017.gnm1",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/duranensis/genome_alignments/V14167.gnm2.wga.96TT/aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT.paf.gz",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": [
+          "Arachis cardenasii K10017.gnm1.DQ4M Genomes",
+          "Arachis duranensis V14167.gnm2.J7QH Genomes"
+        ]
+      },
+      "assemblyNames": [
+        "Arachis cardenasii K10017.gnm1.DQ4M Genomes",
+        "Arachis duranensis V14167.gnm2.J7QH Genomes"
+      ]
+    },
+    {
+      "type": "VariantTrack",
+      "trackId": "aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf",
+      "name": "aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf",
+      "adapter": {
+        "type": "VcfTabixAdapter",
+        "vcfGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Clevenger_Korani_2018/aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Clevenger_Korani_2018/aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": [
+        "diversity"
+      ],
+      "assemblyNames": [
+        "Arachis duranensis V14167.gnm1.SWBf Genomes"
+      ],
+      "description": "Genotyping of African germplasm collection"
+    },
+    {
+      "type": "VariantTrack",
+      "trackId": "aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf.araip",
+      "name": "aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf.araip",
+      "adapter": {
+        "type": "VcfTabixAdapter",
+        "vcfGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Clevenger_Korani_2018/aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Clevenger_Korani_2018/aradu1_araip1.gnm1.div.Clevenger_Korani_2018.snp_chip.vcf.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": [
+        "diversity"
+      ],
+      "assemblyNames": [
+        "Arachis ipaensis K30076.gnm1.bXJ8 Genomes"
+      ],
+      "description": "Genotyping of African germplasm collection"
+    },
+    {
+      "type": "VariantTrack",
+      "trackId": "aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf",
+      "name": "aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf",
+      "adapter": {
+        "type": "VcfTabixAdapter",
+        "vcfGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": [
+        "diversity"
+      ],
+      "assemblyNames": [
+        "Arachis duranensis V14167.gnm1.SWBf Genomes"
+      ],
+      "description": "Diversity data for the U.S. peanut core collection, genotyped relative to the diploid A. duranensis and A. ipaensis genome assemblies"
+    },
+    {
+      "type": "VariantTrack",
+      "trackId": "aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf.araip",
+      "name": "aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf.araip",
+      "adapter": {
+        "type": "VcfTabixAdapter",
+        "vcfGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020.main.vcf.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": [
+        "diversity"
+      ],
+      "assemblyNames": [
+        "Arachis ipaensis K30076.gnm1.bXJ8 Genomes"
+      ],
+      "description": "Diversity data for the U.S. peanut core collection, genotyped relative to the diploid A. duranensis and A. ipaensis genome assemblies"
+    },
+    {
+      "type": "VariantTrack",
+      "trackId": "arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf",
+      "name": "arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf",
+      "adapter": {
+        "type": "VcfTabixAdapter",
+        "vcfGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Wilkey_2019/arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Wilkey_2019/arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": [
+        "diversity"
+      ],
+      "assemblyNames": [
+        "Arachis duranensis V14167.gnm1.SWBf Genomes"
+      ],
+      "description": "Genotype data for US Peanut Mini Core collection"
+    },
+    {
+      "type": "VariantTrack",
+      "trackId": "arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf.araip",
+      "name": "arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf.araip",
+      "adapter": {
+        "type": "VcfTabixAdapter",
+        "vcfGzLocation": {
+          "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Wilkey_2019/arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Wilkey_2019/arahy.aradu1_araip1.gnm1.div.Otyama_Wilkey_2019.snp_chip.vcf.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": [
+        "diversity"
+      ],
+      "assemblyNames": [
+        "Arachis ipaensis K30076.gnm1.bXJ8 Genomes"
+      ],
+      "description": "Genotype data for US Peanut Mini Core collection"
+    }
+  ],
+  "aggregateTextSearchAdapters": [
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Arachis duranensis V14167.gnm1.SWBf Genomes-index",
+      "ixFilePath": {
+        "uri": "trix/Arachis duranensis V14167.gnm1.SWBf Genomes.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Arachis duranensis V14167.gnm1.SWBf Genomes.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Arachis duranensis V14167.gnm1.SWBf Genomes_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Arachis duranensis V14167.gnm1.SWBf Genomes"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Arachis ipaensis K30076.gnm1.bXJ8 Genomes-index",
+      "ixFilePath": {
+        "uri": "trix/Arachis ipaensis K30076.gnm1.bXJ8 Genomes.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Arachis ipaensis K30076.gnm1.bXJ8 Genomes.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Arachis ipaensis K30076.gnm1.bXJ8 Genomes_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Arachis ipaensis K30076.gnm1.bXJ8 Genomes"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes-index",
+      "ixFilePath": {
+        "uri": "trix/Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "arahy.Tifrunner.gnm2-index",
+      "ixFilePath": {
+        "uri": "trix/arahy.Tifrunner.gnm2.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/arahy.Tifrunner.gnm2.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/arahy.Tifrunner.gnm2_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "arahy.Tifrunner.gnm2"
+      ]
+    }
+  ]
+}
