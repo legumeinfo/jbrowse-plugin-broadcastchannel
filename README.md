@@ -23,7 +23,7 @@ Run `yarn` (or `rm yarn.lock && npm install` to use npm instead of yarn) to inst
 After this, run `yarn setup` (or `npm run setup`).
 This configures your project, and adds a build of JBrowse 2 that can be used to test your plugin during development.
 
-To set up reverse proxies, copy `jbrowse.conf` from `proxy-conf/` to your `/etc/httpd/conf.d/` or equivalent.
+To set up reverse proxies, copy `jbrowse.conf` from `proxy-conf/` to your `/etc/httpd/conf.d/` or equivalent, and set the 'jbrowse2' path to that of your JBrowse 2 instance.
 
 ### Build
 
