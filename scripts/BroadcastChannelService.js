@@ -70,6 +70,38 @@ export class BroadcastChannelService {
 
 // =============================================================
 
+// for creating a LinearGenomeView
+const chromosomeToLgvInfo = {
+  // only Arachis for now
+  "arahy.Tifrunner.gnm1": {
+    "assembly": "Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes",
+    "track": "arahy.Tifrunner.gnm1.ann1.CCJH.gene_models_main.gff3"
+  },
+  "aradu.V14167.gnm1": {
+    "assembly": "Arachis duranensis V14167.gnm1.SWBf Genomes",
+    "track": "aradu.V14167.gnm1.ann1.cxSM.gene_models_main.gff3"
+  },
+  "araip.K30076.gnm1": {
+    "assembly": "Arachis ipaensis K30076.gnm1.bXJ8 Genomes",
+    "track": "araip.K30076.gnm1.ann1.J37m.gene_models_main.gff3"
+  },
+  "arahy.Tifrunner.gnm2": {
+    "assembly": "arahy.Tifrunner.gnm2",
+    "track": "arahy.Tifrunner.gnm2.ann1.4K0L.gene_models_main.gff3"
+    // or:
+    // "track": "arahy.Tifrunner.gnm2.ann2.PVFB.gene_models_main.gff3"
+  },
+  "aradu.V14167.gnm2": {
+    "assembly": "Arachis duranensis V14167.gnm2.J7QH Genomes"
+  },
+  "araip.K30076.gnm2": {
+    "assembly": "Arachis ipaensis K30076.gnm2.1GWY Genomes"
+  },
+  "araca.K10017.gnm1": {
+    "assembly": "Arachis cardenasii K10017.gnm1.DQ4M Genomes"
+  }
+}
+
 function handleBroadcastChannelMessage(targets) {
   var organism = targets.organism;
   var chromosome = targets.chromosome;
@@ -96,22 +128,40 @@ function handleBroadcastChannelMessage(targets) {
     // organism + chromosome + genes + extent
     const loc = chromosome + ':' + extent[0] + '..' + extent[1];
 
-    // LinearGenomeView
-    var lgv = window.JBrowseSession.views.find((v) => v.type == 'LinearGenomeView');
-    if (lgv) {
-      lgv.navToLocString(loc);
-      console.log("Updated linear genome view to " + loc);
-    } else {
-      console.log("Found no linear genome view");
-    }
+    // Infer genome assembly from chromosome
+    const regex = /^.+\.gnm\d+/;
+    const chrPrefix = regex.exec(chromosome);
+    const lgvInfo = chromosomeToLgvInfo[chrPrefix];
+    if (!lgvInfo) return;
 
-    // LinearSyntenyView: contains two LinearGenomeViews
-    var lsv = window.JBrowseSession.views.find((v) => v.type == 'LinearSyntenyView');
-    if (lsv) {
-      lsv.views[0].navToLocString(loc);
-      console.log("Updated linear genome view 0 of linear synteny view to " + loc);
+    // Check for a LinearGenomeView with the requested chromosome,
+    // and/or a LinearSyntenyView containing one. If either exists, navigate to loc.
+    // If not, create a new LinearGenomeView and navigate to loc.
+    var lgv = window.JBrowseSession.views.find((v) =>
+      v.type == 'LinearGenomeView' && v.displayedRegions[0].refName == chromosome
+    );
+    var lsv = window.JBrowseSession.views.find((v) =>
+      v.type == 'LinearSyntenyView' &&
+        (v.views[0].displayedRegions[0].refName == chromosome ||
+         v.views[1].displayedRegions[0].refName == chromosome)
+    );
+    const needsNewView = !(lgv || lsv);
+    if (needsNewView) {
+      lgv = window.JBrowseSession.addView('LinearGenomeView', {});
+      // Set its desired assembly and location
+      lgv.navToLocString(loc, lgvInfo.assembly);
+      // Open the desired track, if any
+      if (lgvInfo.track) {
+        lgv.showTrack(lgvInfo.track);
+      }
     } else {
-      console.log("Found no linear synteny view");
+      if (lgv) {
+        lgv.navToLocString(loc);
+      }
+      if (lsv) {
+        var lsv_lgv = lsv.views[0].displayedRegions[0].refName == chromosome ? lsv.views[0] : lsv.views[1];
+        lsv_lgv.navToLocString(loc);
+      }
     }
   }
 }
