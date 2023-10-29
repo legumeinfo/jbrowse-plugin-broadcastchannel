@@ -2,7 +2,7 @@
   "plugins": [
     {
       "name": "Broadcastchannel",
-      "umdUrl": "/jbrowse-bc0/dist/jbrowse-plugin-broadcastchannel.umd.development.js"
+      "umdUrl": "/jbrowse-plugin-broadcastchannel/dist/jbrowse-plugin-broadcastchannel.umd.development.js"
     }
   ],
   "assemblies": [
