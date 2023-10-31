@@ -96,12 +96,15 @@ function handleBroadcastChannelMessage(targets) {
     // organism + chromosome + genes + extent
     const loc = chromosome + ':' + extent[0] + '..' + extent[1];
 
-    // Infer genome assembly from chromosome by matching chromosome prefix to an assembly alias
+    // Infer genome assembly from chromosome by matching chromosome prefix to an assembly name or alias
     const regex = /^.+\.gnm\d+/;
-    const chrPrefix = regex.exec(chromosome); // match to an assembly's alias
-    const allAliases = window.JBrowseSession.assemblies.map(function(a) { return a.aliases.toJSON(); }).flat();
-    const matchingAlias = allAliases.find((a) => a == chrPrefix);
-    if (!matchingAlias) return;
+    const chrPrefix = regex.exec(chromosome);
+    var matchingAssembly = window.JBrowseSession.assemblyNames.find((a) => a == chrPrefix);
+    if (!matchingAssembly) {
+      const allAliases = window.JBrowseSession.assemblies.map(function(a) { return a.aliases.toJSON(); }).flat();
+      matchingAssembly = allAliases.find((a) => a == chrPrefix);
+    }
+    if (!matchingAssembly) return;
 
     // Check for a LinearGenomeView with the requested chromosome,
     // and/or a LinearSyntenyView containing one. If either exists, navigate to loc.
@@ -118,7 +121,7 @@ function handleBroadcastChannelMessage(targets) {
     if (needsNewView) {
       lgv = window.JBrowseSession.addView('LinearGenomeView', {});
       // Set its desired assembly and location
-      lgv.navToLocString(loc, matchingAlias);
+      lgv.navToLocString(loc, matchingAssembly);
     } else {
       if (lgv) {
         lgv.navToLocString(loc);
