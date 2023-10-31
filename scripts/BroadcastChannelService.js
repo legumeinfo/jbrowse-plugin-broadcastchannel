@@ -70,38 +70,6 @@ export class BroadcastChannelService {
 
 // =============================================================
 
-// for creating a LinearGenomeView
-const chromosomeToLgvInfo = {
-  // only Arachis for now
-  "arahy.Tifrunner.gnm1": {
-    "assembly": "Arachis hypogaea Tifrunner.gnm1.KYV3 Genomes",
-    "track": "arahy.Tifrunner.gnm1.ann1.CCJH.gene_models_main.gff3"
-  },
-  "aradu.V14167.gnm1": {
-    "assembly": "Arachis duranensis V14167.gnm1.SWBf Genomes",
-    "track": "aradu.V14167.gnm1.ann1.cxSM.gene_models_main.gff3"
-  },
-  "araip.K30076.gnm1": {
-    "assembly": "Arachis ipaensis K30076.gnm1.bXJ8 Genomes",
-    "track": "araip.K30076.gnm1.ann1.J37m.gene_models_main.gff3"
-  },
-  "arahy.Tifrunner.gnm2": {
-    "assembly": "arahy.Tifrunner.gnm2",
-    "track": "arahy.Tifrunner.gnm2.ann1.4K0L.gene_models_main.gff3"
-    // or:
-    // "track": "arahy.Tifrunner.gnm2.ann2.PVFB.gene_models_main.gff3"
-  },
-  "aradu.V14167.gnm2": {
-    "assembly": "Arachis duranensis V14167.gnm2.J7QH Genomes"
-  },
-  "araip.K30076.gnm2": {
-    "assembly": "Arachis ipaensis K30076.gnm2.1GWY Genomes"
-  },
-  "araca.K10017.gnm1": {
-    "assembly": "Arachis cardenasii K10017.gnm1.DQ4M Genomes"
-  }
-}
-
 function handleBroadcastChannelMessage(targets) {
   var organism = targets.organism;
   var chromosome = targets.chromosome;
@@ -128,11 +96,12 @@ function handleBroadcastChannelMessage(targets) {
     // organism + chromosome + genes + extent
     const loc = chromosome + ':' + extent[0] + '..' + extent[1];
 
-    // Infer genome assembly from chromosome
+    // Infer genome assembly from chromosome by matching chromosome prefix to an assembly alias
     const regex = /^.+\.gnm\d+/;
-    const chrPrefix = regex.exec(chromosome);
-    const lgvInfo = chromosomeToLgvInfo[chrPrefix];
-    if (!lgvInfo) return;
+    const chrPrefix = regex.exec(chromosome); // match to an assembly's alias
+    const allAliases = window.JBrowseSession.assemblies.map(function(a) { return a.aliases.toJSON(); }).flat();
+    const matchingAlias = allAliases.find((a) => a == chrPrefix);
+    if (!matchingAlias) return;
 
     // Check for a LinearGenomeView with the requested chromosome,
     // and/or a LinearSyntenyView containing one. If either exists, navigate to loc.
@@ -149,11 +118,7 @@ function handleBroadcastChannelMessage(targets) {
     if (needsNewView) {
       lgv = window.JBrowseSession.addView('LinearGenomeView', {});
       // Set its desired assembly and location
-      lgv.navToLocString(loc, lgvInfo.assembly);
-      // Open the desired track, if any
-      if (lgvInfo.track) {
-        lgv.showTrack(lgvInfo.track);
-      }
+      lgv.navToLocString(loc, matchingAlias);
     } else {
       if (lgv) {
         lgv.navToLocString(loc);
